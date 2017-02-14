@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="">
+      <siteMapNode url="~/" title="Overview" description="Home"/>
+      <siteMapNode url="~/Pages/GoogleTranslateApi" title="Google Translate API"  description="Loading an API and Making a Request" />
+      <siteMapNode url="~/Pages/AuthorizingAndAuthorizedRequests" title="Authorizing &amp; Authorized Requests"  description="Authorizing and Making Authorized Requests" />
+      <siteMapNode url="~/About" title="About" description="About" />
+      <siteMapNode url="~/Contact" title="Contact" description="Contact" />
+    </siteMapNode>
+</siteMap>
