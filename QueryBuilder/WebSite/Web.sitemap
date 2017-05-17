@@ -2,6 +2,10 @@
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode url="" title=""  description="">
     <siteMapNode url="~/" title="Overview" description="Home" />
+    <siteMapNode url="~/Pages/Basic" title="Basic" description="Basic" />
+    <siteMapNode url="~/Pages/Widgets" title="Widgets" description="Widgets" />
+    <siteMapNode url="~/Pages/Plugins" title="Plugins" description="Plugins" />
+    <siteMapNode url="~/Pages/Exchange" title="Exchange" description="Exchange" />
     <siteMapNode url="~/About" title="About" description="About" />
     <siteMapNode url="~/Contact" title="Contact" description="Contact" />
   </siteMapNode>
