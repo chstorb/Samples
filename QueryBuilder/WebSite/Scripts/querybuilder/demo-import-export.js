@@ -66,30 +66,30 @@ $('#builder-import_export').queryBuilder({
     }]
 });
 
-$('#btn-reset').on('click', function () {
-    $('#builder-import_export').queryBuilder('reset');
-});
+//$('#btn-reset').on('click', function () {
+//    $('#builder-import_export').queryBuilder('reset');
+//});
 
-$('#btn-set-sql').on('click', function () {
-    $('#builder-import_export').queryBuilder('setRulesFromSQL', sql_import_export);
-});
+//$('#btn-set-sql').on('click', function () {
+//    $('#builder-import_export').queryBuilder('setRulesFromSQL', sql_import_export);
+//});
 
-$('#btn-set-mongo').on('click', function () {
-    $('#builder-import_export').queryBuilder('setRulesFromMongo', mongo_import_export);
-});
+//$('#btn-set-mongo').on('click', function () {
+//    $('#builder-import_export').queryBuilder('setRulesFromMongo', mongo_import_export);
+//});
 
-$('#btn-get-sql').on('click', function () {
-    var result = $('#builder-import_export').queryBuilder('getSQL', 'question_mark');
+//$('#btn-get-sql').on('click', function () {
+//    var result = $('#builder-import_export').queryBuilder('getSQL', 'question_mark');
 
-    if (result.sql.length) {
-        alert(result.sql + '\n\n' + JSON.stringify(result.params, null, 2));
-    }
-});
+//    if (result.sql.length) {
+//        alert(result.sql + '\n\n' + JSON.stringify(result.params, null, 2));
+//    }
+//});
 
-$('#btn-get-mongo').on('click', function () {
-    var result = $('#builder-import_export').queryBuilder('getMongo');
+//$('#btn-get-mongo').on('click', function () {
+//    var result = $('#builder-import_export').queryBuilder('getMongo');
 
-    if (!$.isEmptyObject(result)) {
-        alert(JSON.stringify(result, null, 2));
-    }
-});
+//    if (!$.isEmptyObject(result)) {
+//        alert(JSON.stringify(result, null, 2));
+//    }
+//});

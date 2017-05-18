@@ -1,5 +1,5 @@
 // reset builder
-$('.reset').on('click', function () {
+$('.reset').on('click', function () {    
     var target = $(this).data('target');
 
     $('#builder-' + target).queryBuilder('reset');
@@ -33,10 +33,15 @@ $('.parse-json').on('click', function () {
     var result = $('#builder-' + target).queryBuilder('getRules');
 
     if (!$.isEmptyObject(result)) {
-        bootbox.alert({
-            title: $(this).text(),
-            message: '<pre class="code-popup">' + format4popup(result) + '</pre>'
-        });
+        if (typeof bootbox === 'undefined') {
+            //alert(JSON.stringify(result, null, 2));
+            alert(format4popup(result));
+        } else {
+            bootbox.alert({
+                title: $(this).text(),
+                message: '<pre class="code-popup">' + format4popup(result) + '</pre>'
+            });
+        } 
     }
 });
 
@@ -45,10 +50,15 @@ $('.parse-sql').on('click', function () {
     var result = $('#builder-' + target).queryBuilder('getSQL', $(this).data('stmt'));
 
     if (result.sql.length) {
-        bootbox.alert({
-            title: $(this).text(),
-            message: '<pre class="code-popup">' + format4popup(result.sql) + (result.params ? '\n\n' + format4popup(result.params) : '') + '</pre>'
-        });
+        if (typeof bootbox === 'undefined') {
+            //alert(JSON.stringify(result, null, 2));
+            alert(format4popup(result));
+        } else {
+            bootbox.alert({
+                title: $(this).text(),
+                message: '<pre class="code-popup">' + format4popup(result.sql) + (result.params ? '\n\n' + format4popup(result.params) : '') + '</pre>'
+            });
+        }
     }
 });
 
@@ -57,10 +67,15 @@ $('.parse-mongo').on('click', function () {
     var result = $('#builder-' + target).queryBuilder('getMongo');
 
     if (!$.isEmptyObject(result)) {
-        bootbox.alert({
-            title: $(this).text(),
-            message: '<pre class="code-popup">' + format4popup(result) + '</pre>'
-        });
+        if (typeof bootbox === 'undefined') {
+            //alert(JSON.stringify(result, null, 2));
+            alert(format4popup(result));
+        } else {
+            bootbox.alert({
+                title: $(this).text(),
+                message: '<pre class="code-popup">' + format4popup(result) + '</pre>'
+            });
+        }
     }
 });
 

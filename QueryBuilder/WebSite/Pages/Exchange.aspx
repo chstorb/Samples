@@ -1,8 +1,6 @@
 ﻿<%@ Page Title="Import/Export" Language="C#" MasterPageFile="~/Content.master" AutoEventWireup="true" CodeFile="Exchange.aspx.cs" Inherits="Pages_Exchange" %>
 
 <asp:Content ID="HeadContent" ContentPlaceHolderID="head" runat="Server">
-    <link href="../Content/querybuilder/style.css" rel="stylesheet" />
-
     <link href="http://querybuilder.js.org/dist/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css" rel="stylesheet">
     <link href="http://querybuilder.js.org/dist/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css" rel="stylesheet">
     <link href="http://querybuilder.js.org/dist/selectize/dist/css/selectize.bootstrap3.css" rel="stylesheet">
@@ -45,18 +43,15 @@
     </div>
 </asp:Content>
 <asp:Content ID="FooterContent" ContentPlaceHolderID="footer" runat="server">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.3.0/bootbox.min.js"></script>
-    <script src="http://querybuilder.js.org/assets/js/docs.min.js"></script>
-    <script src="http://querybuilder.js.org/assets/js/script.js"></script>
-
     <script src="http://querybuilder.js.org/dist/moment/min/moment.min.js"></script>
     <script src="http://querybuilder.js.org/dist/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="http://querybuilder.js.org/dist/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
     <script src="http://querybuilder.js.org/dist/selectize/dist/js/standalone/selectize.min.js"></script>
     <script src="http://querybuilder.js.org/dist/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    <script src="http://querybuilder.js.org/dist/jQuery-QueryBuilder/dist/js/query-builder.standalone.min.js"></script>
     <script src="http://querybuilder.js.org/dist/sql-parser/browser/sql-parser.js"></script>
     <script src="http://querybuilder.js.org/dist/interact/dist/interact.min.js"></script>
+
+    <script src="../Scripts/querybuilder/query-builder.standalone.js"></script>
 
     <script>var baseurl = 'http://querybuilder.js.org';</script>
     <script src="../Scripts/querybuilder/demo-import-export.js"></script>

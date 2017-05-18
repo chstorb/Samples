@@ -164,18 +164,18 @@ $('#builder-widgets').queryBuilder({
     rules: rules_widgets
 });
 
-$('#btn-reset').on('click', function () {
-    $('#builder-widgets').queryBuilder('reset');
-});
+//$('#btn-reset').on('click', function () {
+//    $('#builder-widgets').queryBuilder('reset');
+//});
 
-$('#btn-set').on('click', function () {
-    $('#builder-widgets').queryBuilder('setRules', rules_widgets);
-});
+//$('#btn-set').on('click', function () {
+//    $('#builder-widgets').queryBuilder('setRules', rules_widgets);
+//});
 
-$('#btn-get').on('click', function () {
-    var result = $('#builder-widgets').queryBuilder('getRules');
+//$('#btn-get').on('click', function () {
+//    var result = $('#builder-widgets').queryBuilder('getRules');
 
-    if (!$.isEmptyObject(result)) {
-        alert(JSON.stringify(result, null, 2));
-    }
-});
+//    if (!$.isEmptyObject(result)) {
+//        alert(JSON.stringify(result, null, 2));
+//    }
+//});

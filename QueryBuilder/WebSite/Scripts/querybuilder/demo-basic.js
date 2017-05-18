@@ -70,19 +70,3 @@ $('#builder-basic').queryBuilder({
 
     rules: rules_basic
 });
-
-$('#btn-reset').on('click', function () {
-    $('#builder-basic').queryBuilder('reset');
-});
-
-$('#btn-set').on('click', function () {
-    $('#builder-basic').queryBuilder('setRules', rules_basic);
-});
-
-$('#btn-get').on('click', function () {
-    var result = $('#builder-basic').queryBuilder('getRules');
-    
-    if (!$.isEmptyObject(result)) {
-        alert(JSON.stringify(result, null, 2));
-    }
-});
