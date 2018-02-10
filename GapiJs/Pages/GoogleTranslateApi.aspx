@@ -15,7 +15,9 @@
 <asp:Content ID="FooterContent" ContentPlaceHolderID="footer" runat="server">
     <script src="../Scripts/gapi.js"></script>
     <script>
+        debugger;
         function start() {
+            debugger;
             // Initializes the client with the API key and the Translate API.
             gapi.client.init({
                 'apiKey': '<%= Application["GOOGLE_API_KEY"] %>',
