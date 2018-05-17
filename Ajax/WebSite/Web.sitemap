@@ -2,10 +2,11 @@
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
     <siteMapNode url="" title=""  description="">
         <siteMapNode url="~/" title="Overview" description="Home" />
-        <siteMapNode url="~/Pages/BorderAnimation" title="Border Animation" description="Border Animation" />
-        <siteMapNode url="~/Pages/ClientEvents" title="Client Events" description="Client Events" />
+        <siteMapNode url="~/Pages/BorderAnimation" title="Border Animation" description="Border Animation" />        
         <siteMapNode url="~/Pages/HoverButton" title="Hover Button" description="Hover Button" />
         <siteMapNode url="~/Pages/Timer" title="Timer" description="Timer" />
+        <siteMapNode url="~/Pages/ClientEvents" title="Update Panel Client Events" description="Update Panel Client Events" />
+        <siteMapNode url="~/Pages/UpdatePanelRefreshProgrammatically" title="Update Panel Refresh" description="Refreshing an UpdatePanel Programmatically" />
         <siteMapNode url="~/About" title="About" description="About" />
         <siteMapNode url="~/Contact" title="Contact" description="Contact" />
     </siteMapNode>

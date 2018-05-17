@@ -1724,6 +1724,7 @@ QueryBuilder.prototype.destroy = function() {
      * @event beforeDestroy
      * @memberof QueryBuilder
      */
+    debugger;
     this.trigger('beforeDestroy');
 
     if (this.status.generated_id) {
@@ -3916,7 +3917,8 @@ Utils.groupSort = function(items, key) {
  * @example
  * $('#builder').queryBuilder('methodName', methodParam1, methodParam2);
  */
-$.fn.queryBuilder = function(option) {
+        $.fn.queryBuilder = function (option) {
+            debugger;
     if (this.length === 0) {
         Utils.error('Config', 'No target defined');
     }
