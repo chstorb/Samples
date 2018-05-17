@@ -26,6 +26,7 @@
 function initClient() {
     // Initialize the client with API key and People API, and initialize OAuth with an
     // OAuth 2.0 client ID and scopes (space delimited string) to request access.
+    debugger;
     gapi.client.init({
         apiKey: '<%= Application["GOOGLE_API_KEY"] %>',
         discoveryDocs: ["https://people.googleapis.com/$discovery/rest?version=v1"],
@@ -72,6 +73,6 @@ function initClient() {
         });
       }
     </script>
-    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){ handleClientLoad(); }" onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
 </asp:Content>
