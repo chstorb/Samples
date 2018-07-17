@@ -5,6 +5,7 @@
         <siteMapNode url="~/Pages/BorderAnimation" title="Border Animation" description="Border Animation" />
         <siteMapNode url="~/Pages/ClientEvents" title="Client Events" description="Client Events" />
         <siteMapNode url="~/Pages/HoverButton" title="Hover Button" description="Hover Button" />
+        <siteMapNode url="~/Pages/MailLink" title="Mail Link" description="Mail Link Control" />
         <siteMapNode url="~/Pages/Timer" title="Timer" description="Timer" />
         <siteMapNode url="~/About" title="About" description="About" />
         <siteMapNode url="~/Contact" title="Contact" description="Contact" />
