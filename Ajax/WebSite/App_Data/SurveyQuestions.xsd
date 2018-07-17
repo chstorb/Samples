@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Questions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Question" type="Question" minOccurs="3" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Choices">
+    <xs:sequence>
+      <xs:element name="Choice" type="Choice" minOccurs="3" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Question">
+    <xs:sequence>
+      <xs:element name="Choices" type="Choices"/>
+    </xs:sequence>
+    <xs:attribute name="ID" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:int"/>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="Title" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:simpleType name="Choice">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+</xs:schema>

@@ -25,6 +25,9 @@
                             <button class="btn btn-success set-json" data-target="basic">Set rules</button>
                             <button class="btn btn-primary parse-json" data-target="basic">Get rules</button>
                         </div>
+                        <div class="btn-group">
+                            <button class="btn btn-primary destroy" data-target="basic">Destroy</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -35,4 +38,14 @@
     <script src="../Scripts/querybuilder/query-builder.standalone.js"></script>
     <script src="../Scripts/querybuilder/demo-basic.js"></script>
     <script src="../Scripts/querybuilder/demo.js"></script>    
+    <script type="text/javascript">
+        $(".destroy").on("click", function () {
+            debugger;
+            try {
+                $('#builder-basic').queryBuilder('destroy');
+            } catch (ex) {
+                alert(ex.message);
+            }
+        });
+    </script>
 </asp:Content>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Questions>
+  <Question Title="Favorite color?" ID="0">
+    <Choices>
+      <Choice>Red</Choice>
+      <Choice>Green</Choice>
+      <Choice>Blue</Choice>
+    </Choices>
+  </Question>
+  <Question Title="Favorite day or the week?" ID="1">
+    <Choices>
+      <Choice>Monday</Choice>
+      <Choice>Tuesday</Choice>
+      <Choice>Wednesday</Choice>
+    </Choices>
+  </Question>
+  <Question Title="Favorite activities?" ID="2">
+    <Choices>
+      <Choice>Gardening</Choice>
+      <Choice>Skiing</Choice>
+      <Choice>Walking</Choice>
+    </Choices>
+  </Question>
+</Questions>
