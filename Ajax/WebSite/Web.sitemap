@@ -2,7 +2,8 @@
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
     <siteMapNode url="" title=""  description="">
         <siteMapNode url="~/" title="Overview" description="Home" />
-        <siteMapNode url="~/Pages/BorderAnimation" title="Border Animation" description="Border Animation" />        
+        <siteMapNode url="~/Pages/BorderAnimation" title="Border Animation" description="Border Animation" />
+        <siteMapNode url="~/Pages/FunkyTextBox" title="Funky Textbox" description="Funky Textbox" />
         <siteMapNode url="~/Pages/HoverButton" title="Hover Button" description="Hover Button" />
         <siteMapNode url="~/Pages/MailLink" title="Mail Link" description="Mail Link Control" />
         <siteMapNode url="~/Pages/Timer" title="Timer" description="Timer" />
