@@ -9,3 +9,8 @@
 /jQueryUI
 /Ajax/WebApp/bin
 /Ajax/WebApp/obj/Debug
+/AsmxWebService/AsmxWebService
+/AsmxWebService/AsmxWebService.Tests
+/AsmxWebService/AsmxWebService.sln
+/AspNetCoreWebApplication
+/AsmxWebService/.vs
