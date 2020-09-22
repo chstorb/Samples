@@ -36,7 +36,6 @@
         app.add_init(applicationInitHandler);
 
         function applicationInitHandler(sender, args) {
-            debugger;
             $create(ScriptLibrary.HoverButton,
                 {
                     text: 'A HoverButton Control',
@@ -57,13 +56,11 @@
         }
 
         function doSomethingOnHover(sender, args) {
-            debugger;
             hoverMessage = "The mouse is over the button."
             $get('HoverLabel').innerHTML = hoverMessage;
         }
 
         function doSomethingOnUnHover(sender, args) {
-            debugger;
             $get('HoverLabel').innerHTML = "";
         }
 
